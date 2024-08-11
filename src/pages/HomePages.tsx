@@ -14,21 +14,19 @@ class HomePages extends Component<IProps, IState> {
       counter: 0,
       products: [],
     }
-    // fire for the firat time
-    console.log("%c constructor", "background-color:green;");
+   
     
   }
   render() {
     // fire for every change in componenta
   
-    console.log("%c re-render", "background-color:red;");
     return (
       <div>
         <h1>HomePage</h1>
         <h1>count:{this.state.counter}</h1>
         <button
           onClick={() => this.setState({ counter: this.state.counter + 1 })}
-        ></button>
+        >+</button>
       </div>
     );
   }
