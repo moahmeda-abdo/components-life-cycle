@@ -26,6 +26,10 @@ export default class ProductPages extends Component<IProps, IState> {
       }
     });
 }
+componentDidUpdate(): void {
+  console.log("%c componentDidUpdate", "background-color:cyan; color:black;");
+    
+}
   render() {
     console.log("%c re-render", "background-color:red;");
 
